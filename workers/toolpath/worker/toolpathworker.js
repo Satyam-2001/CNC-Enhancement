@@ -7,7 +7,7 @@ if (typeof window == "undefined") { // Only run as worker
 
   self.addEventListener('message', function(e) {
     // console.log("New message received by worker", e.data.data.length)
-    importScripts("./lib/clipperjs/clipper_unminified.js", "./lib/threejs/three.min.js", "./lib/gl-matrix.js", "./lib/tbfleming/web-cam-cpp.js");
+    importScripts("https://satyam-2001.github.io/CNC-Enhancement/lib/clipperjs/clipper_unminified.js", "https://satyam-2001.github.io/CNC-Enhancement/lib/threejs/three.min.js", "https://satyam-2001.github.io/CNC-Enhancement/lib/gl-matrix.js", "https://satyam-2001.github.io/CNC-Enhancement/lib/tbfleming/web-cam-cpp.js");
 
 
     var toolpaths = JSON.parse(e.data.data.toolpath);
